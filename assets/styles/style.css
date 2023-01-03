@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #999;
+}
+
+.whole {
+  background-color: burlywood;
+  width: 95vw;
+  max-width: 500px;
+  height: fit-content;
+  margin: 4rem auto;
+  padding: 10px;
+}
+
+.section1 {
+  background-color: #555;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: fit-content;
+  margin: 1rem 0;
+  padding: 10px;
+}
+
+.section1 input {
+  height: 30px;
+  min-width: 195px;
+  max-width: 90%;
+}
+
+.section1 button {
+  background-color: #a52a2a;
+  border: none;
+  color: #fff;
+  height: 30px;
+  align-self: flex-end;
+}
+
+.all-users {
+  padding: 10px;
+  position: relative;
+}
+
+.user {
+  background-color: #777;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  min-height: 70px;
+  transition: 0.5s;
+}
+
+.display-div {
+  background-color: #080;
+  position: absolute;
+  width: 100%;
+  top: unset;
+  right: -100%;
+}
+
+.user .user-profile {
+  /* background-image: url("../images/user\ profile.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+
+  background-color: #000;
+  border-radius: 50px;
+  color: #a52a2a;
+  width: 115px;
+  height: 90px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.user > div:nth-of-type(2) {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user .user-name,
+.user .user-age {
+  font-size: large;
+  margin-left: 1rem;
+}
+
+.user-name .highlight {
+  background-color: #333;
+  color: #ffd700;
+}
+
+.user .remove-user {
+  background-color: #a52a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin-right: 5px;
+  border: none;
+  width: 80px;
+  height: 50px;
+  border-radius: 100% 5px 5px 100%;
+}
+
+.user button span {
+  font-size: 30px;
+  color: #000;
+  margin-right: 2px;
+}
